@@ -11,28 +11,115 @@
     <meta charset="UTF-8"/>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>3kh0 lite</title>
+    <style>
+        *:focus {
+            outline:1px solid #400080;
+        }
+        ::selection {
+            background-color:#8000FF30;
+            color:#d5aaFF
+        }
+        body {
+            background-color:#000;
+            color:#CCC;
+            font-family:sans-serif;
+            margin:0;
+            padding:0;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            height:100vh;
+        }
+        #title {
+            color:#300060;
+            text-shadow:0px 0px 14px #300060;
+            font-size:3em;
+            text-align:center;
+        }
+        #subtitle {
+            font-size:1.5em;
+        }
+        #container {
+            border-radius:10px;
+            text-align: center;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color:#FFFFFF09;
+            border:1px solid #FFFFFF19;
+            padding:20px;
+        }
+        #start {
+            cursor:pointer;
+            background-color: #101010;
+            border:none;
+            color: white;
+            padding: 18px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.2em;
+            border-radius: 5px;
+            margin-top: 20px;
+            user-select:none;
+        }
+        #start:hover, #tools:hover {
+            background-color:#160022;
+            color:#d5AAFF;
+        }
+        #tools {
+            cursor: pointer;
+            background-color:#101010;
+            border: none;
+            color: white;
+            padding: 14px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size:1.2em;
+            margin-top: 5px;
+        }
+        a:link, a:visited {
+            color:#CC80FF;
+        }
+        footer {
+            width:100%;
+            position:absolute;
+            bottom:0;
+            text-align:center;
+            font-size:20px;
+            color:#CCC;
+            padding-bottom:15px;
+            padding-top:20px
+        }
+        footer p {
+            display:inline;
+        }
+    </style>
 </head>
-<body style="background-color: #121212; color: #ffffff; font-family: sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
-<h1 style="font-size: 3em; text-align: center;">
+<body>
+<h1 id="title">
     3kh0 lite
 </h1>
-<span id="subtitle" style="font-size: 1.5em;">...</span>
-<p style="text-align: center; max-width: 600px; margin: 20px auto;">
-    Welcome to 3kh0 lite, a lightweight, lightning fast, and simple game site.<br/>
+<div id="container">
+<span id="subtitle">...</span>
+    <p id="intro">Welcome to 3kh0 lite, a lightweight, lightning fast, and simple game site.</p>
     <a href="/games/index.html" style="text-decoration: none;">
-        <button
-            style="cursor: pointer; background-color: #22c55e; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 20px; margin-top: 20px;">
+        <button id="start">
             Start playing!
         </button>
     </a><br/>
     <br/>
     <a href="/misc.html" style="text-decoration: none;">
-        <button
-            style="cursor: pointer; background-color: #b625cc; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 20px; margin-top: 5px;">
+        <button id="tools">
             Tools and settings
         </button>
     </a>
-</p>
+</div>
+<footer>
+    <p>This website is a fork from <a href="https://github.com/3kh0s" title="I mean github, duh. What else did you think I was talking about?" target="_blank">3kh0s on the hub</a>.</p><br>
+    <p>Visit the original site <a href="https://3kh0s.github.io" target="_blank">here</a>!</p>
+</footer>
 <script src="/js/main.js"></script>
 <script src="/js/subtitle.js"></script>
 </body>
